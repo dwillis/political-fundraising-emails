@@ -1,0 +1,13 @@
+[project]
+name = "politiical-fundraising-emails"
+version = "0.1.0"
+description = "Code to process MBOX-format emails"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "emailnetwork>=0.0.2",
+    "html2text>=2025.4.15",
+    "mailbox>=0.4",
+    "sqlite-utils>=3.38",
+    "urlextract>=1.9.0",
+]
