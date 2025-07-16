@@ -123,4 +123,4 @@ Derek Willis
 
 ## Acknowledgments
 
-Built with the [emailnetwork](https://pypi.org/project/emailnetwork/) library for robust email processing and [sqlite-utils](https://sqlite-utils.datasette.io/en/stable/)
+Built with the [emailnetwork](https://pypi.org/project/emailnetwork/) library for email processing and [sqlite-utils](https://sqlite-utils.datasette.io/en/stable/)

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Political Fundraising Email Database</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #222;
+            background-color: #f4f6fb;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            background: linear-gradient(135deg, #e3e8ff 0%, #c7d2fe 100%);
+            color: #222;
+            padding: 3rem 0;
+            text-align: center;
+            margin-bottom: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .stat-card {
+            background: #f9fafc;
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+            transition: transform 0.2s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-2px);
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #2a3a7a;
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: #444;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-top: 0.5rem;
+        }
+
+        .content {
+            background: #fff;
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            color: #1a237e;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #222;
+        }
+
+        .highlight {
+            background: #eaf6e8;
+            padding: 1.5rem;
+            border-left: 4px solid #2e7d32;
+            border-radius: 4px;
+            margin: 1.5rem 0;
+        }
+
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .feature-list li {
+            padding: 0.5rem 0;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .feature-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #388e3c;
+            font-weight: bold;
+        }
+
+        .update-notice {
+            background: #fffde7;
+            color: #795548;
+            padding: 1rem;
+            border-radius: 4px;
+            text-align: center;
+            font-weight: 500;
+            margin-top: 2rem;
+        }
+
+        .github-link {
+            display: inline-block;
+            background: #1a237e;
+            color: #fff;
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+            margin-top: 1rem;
+        }
+
+        .github-link:hover {
+            background: #3949ab;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            color: #444;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .stats {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Political Fundraising Email Database</h1>
+            <p class="subtitle">A public collection of political fundraising messages from 2015-2025</p>
+            <p class="subtitle">Available at <a href="https://political-emails.datasette.cloud/data/emails">https://political-emails.datasette.cloud/data/emails</a></p>
+        </header>
+
+        <div class="stats">
+            <div class="stat-card">
+                <span class="stat-number">525,000+</span>
+                <div class="stat-label">Total Messages</div>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">2015-2025</span>
+                <div class="stat-label">Date Range</div>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">67.8%</span>
+                <div class="stat-label">Have Disclaimer</div>
+            </div>
+        </div>
+
+        <div class="content">
+            <h2>About the Database</h2>
+            <p>This database contains over 525,000 political fundraising emails collected from 2015 to 2025, with more than half originating from the high-activity years of 2022 and 2024. All emails were sent to a single Gmail account, providing a longitudinal view of political fundraising messages.</p>
+            
+            <div class="highlight">
+                <strong>Peak Activity:</strong> More than 50% of messages were sent during 2022 and 2024, reflecting increased activity during election years.
+            </div>
+
+            <h2>Data Sources</h2>
+            <p>The senders include a mix of political and advocacy organizations representing both major political parties:</p>
+            <ul class="feature-list">
+                <li>Federal political committees</li>
+                <li>State and local political committees</li>
+                <li>Political advocacy organizations</li>
+                <li>Partisan news aggregators</li>
+                <li>Issue-based organizations</li>
+                <li>Some educational or commercial organizations with ideological ties</li>
+            </ul>
+
+            <h2>Data Characteristics</h2>
+            <p>Each message includes comprehensive metadata and content analysis:</p>
+            <ul class="feature-list">
+                <li>Full message content with HTML-to-text conversion</li>
+                <li>Sender information and domain extraction</li>
+                <li>Political party affiliation detection</li>
+                <li>Disclaimer presence identification</li>
+                <li>URL extraction and cataloging</li>
+                <li>Temporal metadata (date, time components)</li>
+            </ul>
+
+            <div class="highlight">
+                <strong>Identifying Political Committees:</strong> The presence of disclaimers (phrases like "paid for by") is a reliable indicator distinguishing traditional political committees from advocacy organizations and other entities.
+            </div>
+
+            <h2>Technical Implementation</h2>
+            <p>The database is built using Python and includes:</p>
+            <ul class="feature-list">
+                <li>SQLite database with full-text search capabilities</li>
+                <li>Political party classification</li>
+                <li>Domain-based sender identification</li>
+                <li>Fundraising platform detection (ActBlue, WinRed, etc.)</li>
+                <li>Hosting generously provided by <a href="https://www.datasette.cloud/">Datasette Cloud</a></li>
+            </ul>
+
+            <a href="https://github.com/dwillis/political-fundraising-emails" class="github-link">
+                View code on GitHub
+            </a>
+        </div>
+
+        <div class="content">
+            <h2>Data Considerations</h2>
+            <p>Some emails may appear multiple times due to list sharing among committees and organizations. Not every political campaign or committee is represented in this data.</p>
+            
+            <p>The dataset offers researchers, journalists and analysts a window into political fundraising communication strategies and how messaging spreads among political actors.</p>
+        </div>
+
+        <div class="update-notice">
+            📊 Database updated regularly with new messages
+        </div>
+
+        <footer>
+            <p>Created by Derek Willis | Data spans 2015-2025</p>
+        </footer>
+    </div>
+</body>
+</html>
