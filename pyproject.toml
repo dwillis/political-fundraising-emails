@@ -1,13 +1,10 @@
 [project]
-name = "politiical-fundraising-emails"
-version = "0.1.0"
-description = "Code to process MBOX-format emails"
+name = "political-fundraising-emails"
+version = "0.2.0"
+description = "Extract and compare political committee names from fundraising emails using local LLMs"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "emailnetwork>=0.0.2",
-    "html2text>=2025.4.15",
-    "mailbox>=0.4",
-    "sqlite-utils>=3.38",
-    "urlextract>=1.9.0",
+    "llm>=0.26",
+    "rapidfuzz>=3.12",
 ]

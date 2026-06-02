@@ -1,3 +1,8 @@
+# Data files (too large for version control)
+emails.json
+emails_updated*.json
+*.progress.jsonl
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
